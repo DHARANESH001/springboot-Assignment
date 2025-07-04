@@ -1,31 +1,39 @@
 package com.example.demo.models;
 
-public class Employee {
+public class Student {
     private int userid;
     private String name;
-    private String job;
+    private String course;
 
-    public Employee(int userid, String name, String job) {
+    public Student(int userid, String name, String course) {
         this.userid = userid;
         this.name = name;
-        this.job = job;
+        this.course = course;
     }
+
+    // Getters
     public int getUserid() {
         return userid;
     }
+
     public String getName() {
         return name;
     }
-    public String getJob() {
-        return job;
+
+    public String getCourse() {
+        return course;
     }
+
+    // Setters
     public void setUserid(int userid) {
         this.userid = userid;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public void setJob(String job) {
-        this.job = job;
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 }
